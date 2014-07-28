@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{1E9AEDCC-0B49-F346-231C-4FE548AB0B51}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_1;UNITY_4_5;UNITY_WP8;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_LAZY_METHOD_CACHING;ENABLE_AUDIO_FMOD;ENABLE_TERRAIN;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_WINRT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_SERIALIZATION_BY_CODEGENERATION;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/PlaybackEngines/WP8Support/Tools/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Engine\Examples\Feature Demo\FeatureDemo.cs" />
+     <Compile Include="Assets\Engine\Examples\Feature Demo\Multiple Database Example\AddRemoveDatabaseTrigger.cs" />
+     <Compile Include="Assets\Engine\Examples\Lua Example\LuaExample.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Sequencer Commands\SequencerCommandLoadLevel.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\AlwaysFaceCamera.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\ConversationLogger.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\DieOnTakeDamage.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\From Unity3D Community\SmoothCameraWithBumper.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\IncrementOnDestroy.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\NavigateOnMouseClick.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\ProximitySelector.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\QuestTracker.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\RangeTrigger.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\SelectionDelegates.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\Selector.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\SimpleController.cs" />
+     <Compile Include="Assets\Engine\Scripts\Supplemental\Utility\Usable.cs" />
+     <Compile Include="Assets\Engine\Scripts\Templates\Aurora\TemplateNWScript.cs" />
+     <Compile Include="Assets\Engine\Scripts\Templates\PersistentDataTemplate.cs" />
+     <Compile Include="Assets\Engine\Scripts\Templates\SequencerCommandTemplate.cs" />
+     <Compile Include="Assets\Engine\Scripts\Templates\TemplateBarkUI.cs" />
+     <Compile Include="Assets\Engine\Scripts\Templates\TemplateDialogueUI.cs" />
+     <Compile Include="Assets\Engine\Scripts\Templates\TemplateQuestLogWindow.cs" />
+     <Compile Include="Assets\Engine\Scripts\Templates\TemplateTextFieldUI.cs" />
+     <Compile Include="Assets\playerScript.cs" />
+     <None Include="Assets\Engine\Examples\Bark Example\Three NPCs Bark\_README.txt" />
+     <None Include="Assets\Engine\Prefabs\iOS\_README.txt" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Computer\Bitwise Font\!license.txt" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Computer\Typing.txt" />
+     <None Include="Assets\Engine\Examples\Lua Example\_README.txt" />
+     <None Include="Assets\Engine\Examples\Bark Example\Bark Example.xml" />
+     <None Include="Assets\Engine\Examples\Bark Example\Bark Conversation\_README.txt" />
+     <None Include="Assets\Engine\Examples\Art\Sounds\_README.txt" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Circle\Textures\_README.txt" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Necromancer\_README.txt" />
+     <None Include="Assets\Engine\Examples\Feature Demo\Multiple Database Example\_README.txt" />
+     <None Include="Assets\Engine\Examples\Bark Example\_README.txt" />
+     <None Include="Assets\Engine\Examples\Save Load Example\_README_FIRST_IMPORTANT!.txt" />
+     <None Include="Assets\Engine\Examples\Bark Example\Three NPCs Bark\Three NPCs Bark.xml" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Shared Audio\_README.txt" />
+     <None Include="Assets\Engine\Examples\Camera Angle Studio\_README.txt" />
+     <None Include="Assets\Engine\Examples\Quick Start\Quick Start.xml" />
+     <None Include="Assets\Engine\Examples\_README.txt" />
+     <None Include="Assets\Engine\Examples\Sequence Example\_README.txt" />
+     <None Include="Assets\Engine\Examples\Feature Demo\Text Input Example\_README.txt" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Necromancer\Necromancer GUI\Kingthings.txt" />
+     <None Include="Assets\Engine\Examples\Art\_README.txt" />
+     <None Include="Assets\Engine\Examples\Feature Demo\Dialogue Database\Feature Demo.xml" />
+     <None Include="Assets\Engine\Examples\Quest Example\_README.txt" />
+     <None Include="Assets\Engine\Examples\Feature Demo\_README.txt" />
+     <None Include="Assets\Engine\Prefabs\iOS\link.xml" />
+     <None Include="Assets\Engine\Examples\Quick Start\_README.txt" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Necromancer\Necromancer GUI\Readme.txt" />
+     <None Include="Assets\Engine\Scripts\Supplemental\Utility\_README.txt" />
+     <None Include="Assets\Engine\KopiLua\_README.txt" />
+     <None Include="Assets\Engine\Examples\Feature Demo\Feature Demo with Continue Button\_README.txt" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Wheel\_README.txt" />
+     <None Include="Assets\Engine\Examples\Feature Demo\Menu Text Demo\Feature Demo With Menu Text.xml" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Shared Fonts\Orbitron\SIL Open Font License.txt" />
+     <None Include="Assets\Engine\Prefabs\Unity Dialogue UIs\Shared Textures\_README.txt" />
+     <None Include="Assets\Engine\Prefabs\_README.txt" />
+     <None Include="Assets\Engine\Examples\Feature Demo\Menu Text Demo\_README.txt" />
+     <None Include="Assets\Engine\Examples\Feature Demo\Articy Feature Demo\Articy Feature Demo.xml" />
+ <Reference Include="DialogueSystem">
+ <HintPath>C:/Users/William/Documents/_Git/desolationText/textAdventure/Assets/Engine/DLLs/DialogueSystem.dll</HintPath>
+ </Reference>
+ <Reference Include="KopiLua">
+ <HintPath>C:/Users/William/Documents/_Git/desolationText/textAdventure/Assets/Engine/KopiLua/Plugins/KopiLua.dll</HintPath>
+ </Reference>
+ <Reference Include="KopiLuaDll">
+ <HintPath>C:/Users/William/Documents/_Git/desolationText/textAdventure/Assets/Engine/KopiLua/Plugins/KopiLuaDll.dll</HintPath>
+ </Reference>
+ <Reference Include="KopiLuaInterface">
+ <HintPath>C:/Users/William/Documents/_Git/desolationText/textAdventure/Assets/Engine/KopiLua/Plugins/KopiLuaInterface.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
