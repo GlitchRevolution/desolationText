@@ -1,8 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\playerScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\playerScript.cs">
     <Files>
-      <File FileName="Assets\playerScript.cs" Line="16" Column="28" />
+      <File FileName="Assets\Scripts\playerScript.cs" Line="27" Column="45" />
+      <File FileName="Assets\Dialogue System\Scripts\Supplemental\Utility\IncrementOnDestroy.cs" Line="4" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

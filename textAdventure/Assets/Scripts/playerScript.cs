@@ -18,7 +18,14 @@ public class playerScript : MonoBehaviour {
 
 	public Color red;
 	public Color yellow;
-	//Dialogue System = SendMessage(AddLife,,topbar)
+	/* Dialogue System = SendMessage(AddLife,,topbar)
+	 * Conditional: Variable["VARIABLE_NAME"] == true
+	 * [em1]Color Emphasis[/em1]
+	 * Item["Assassinate_the_Emperor"].State = "success"
+	 * and (Variable["Kills"] < 5)
+	 * "I need a doctor, not a [var=My_Job_Title]!"
+	 * Variable["Gold"] = Variable["Gold"] + 50
+	 */
 
 	void Update() {
 		lifeString = life.ToString ();
