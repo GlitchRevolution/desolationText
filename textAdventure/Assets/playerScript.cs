@@ -31,11 +31,11 @@ public class playerScript : MonoBehaviour {
 		GUI.DrawTexture(new Rect(0, 4, 25, 25), lifeIcon);
 		GUI.Label(new Rect(30, 4, 25, 25), lifeString, skin);
 		GUI.color = yellow;
-		GUI.DrawTexture(new Rect(80, 4, 25, 25), ammoIcon);
-		GUI.Label(new Rect(110, 4, 25, 25), ammoString, skin);
+		GUI.DrawTexture(new Rect(75, 4, 25, 25), ammoIcon);
+		GUI.Label(new Rect(105, 4, 25, 25), ammoString, skin);
 		GUI.color = Color.white;
-		GUI.DrawTexture(new Rect(160, 4, 25, 25), knackIcon);
-		GUI.Label(new Rect(190, 4, 25, 25), knackString, skin);
+		GUI.DrawTexture(new Rect(130, 4, 25, 25), knackIcon);
+		GUI.Label(new Rect(160, 4, 25, 25), knackString, skin);
 	}
 
 	void AddLife() {
