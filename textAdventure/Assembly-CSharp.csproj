@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\CharacterCreation.cs" />
      <Compile Include="Assets\Dialogue System\Examples\Feature Demo\FeatureDemo.cs" />
      <Compile Include="Assets\Dialogue System\Examples\Feature Demo\Multiple Database Example\AddRemoveDatabaseTrigger.cs" />
      <Compile Include="Assets\Dialogue System\Examples\Lua Example\LuaExample.cs" />

@@ -18,6 +18,19 @@ public class playerScript : MonoBehaviour {
 
 	public Color red;
 	public Color yellow;
+
+	public float playerEXP;
+	public float playerStr;
+	public float playerInt;
+	public float playerAgl;
+
+	//MENU STUFF
+	public Transform GUIroot;
+	private bool menuOn;
+	private bool inventoryOn;
+	public Sprite playerPortrait;
+	
+
 	/* Dialogue System = SendMessage(AddLife,,topbar)
 	 * Conditional: Variable["VARIABLE_NAME"] == true
 	 * [em1]Color Emphasis[/em1]
@@ -27,6 +40,10 @@ public class playerScript : MonoBehaviour {
 	 * Variable["Gold"] = Variable["Gold"] + 50
 	 */
 
+
+	void Start() {
+		GetComponent<SpriteRenderer> ().sprite = playerPortrait; //Player portrait = 
+	}
 	void Update() {
 		lifeString = life.ToString ();
 		ammoString = ammo.ToString ();
@@ -43,29 +60,60 @@ public class playerScript : MonoBehaviour {
 		GUI.color = Color.white;
 		GUI.DrawTexture(new Rect(130, 4, 25, 25), knackIcon);
 		GUI.Label(new Rect(160, 4, 25, 25), knackString, skin);
+
+		if (menuOn == true) {
+			if (inventoryOn == true) {
+			
+			}
+		}
 	}
 
 	void AddLife() {
-		Debug.Log ("+1 Life!");
 		life += 1;
+		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Life", life);
 	}
 	void SubLife(){
-		Debug.Log ("-1 Life!");
 		life -= 1;
 		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Life", life);
 	}
 	void AddAmmo(){
 		ammo += 1;
+		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Ammo", ammo);
 	}
 	void SubAmmo(){
 		ammo -= 1;
+		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Ammo", ammo);
 	}
 	void AddKnack(){
 		knack += 1;
+		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Knack", knack);
 	}
 	void SubKnack(){
 		knack -= 1;
+		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Knack", knack);
 	}
 
-	//static void PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Life", life)	
+	void OnMouseDown(){
+		if (menuOn == false) {
+			GUIroot.active = false;
+			Invoke ("menuToggle",0.5f);
+		}
+		if (menuOn == true) {
+			GUIroot.active = true;
+			Invoke ("menuToggle",0.5f);
+		}
+	}
+	void menuToggle() {
+		menuOn = !menuOn;
+	}
+
+	void CharacterCreation(){
+		playerStr = GetComponent<CharacterCreation>().strength;
+		playerInt = GetComponent<CharacterCreation>().intelligence;
+		playerAgl = GetComponent<CharacterCreation>().agility;
+		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Strength", playerStr);
+		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Agility", playerAgl);
+		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Intelligence", playerInt);
+		playerPortrait = GetComponent<CharacterCreation> ().portrait;
+	}
 }
