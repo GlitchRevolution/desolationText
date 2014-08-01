@@ -3,7 +3,7 @@ desolationText
 
 | TODO  |
 | ------------- |
-| ~~LUA variables!!  |
+| ~~LUA variables~~  |
 |  Character Creation   | 
 |  Inventory   | 
 |   Menu  | 
@@ -12,3 +12,4 @@ desolationText
 |  Cross-game support   | 
 |  Ad integration   | 
 
+* ~~LUA Variables~~
