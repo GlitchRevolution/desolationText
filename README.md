@@ -1,15 +1,10 @@
 desolationText
 ==============
-
-| TODO  |
-| ------------- |
-| ~~LUA variables~~  |
-|  Character Creation   | 
-|  Inventory   | 
-|   Menu  | 
-|   Sound effects  | 
-|   Image support  | 
-|  Cross-game support   | 
-|  Ad integration   | 
-
 * ~~LUA Variables~~
+* Character creation
+* Inventory
+* Menu
+* Sound Effects
+* Image Support
+* Cross-game advertisement
+* Ad integration
