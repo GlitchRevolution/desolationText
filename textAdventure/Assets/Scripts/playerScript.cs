@@ -52,6 +52,7 @@ public class playerScript : MonoBehaviour {
 	void SubLife(){
 		Debug.Log ("-1 Life!");
 		life -= 1;
+		PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Life", true);
 	}
 	void AddAmmo(){
 		ammo += 1;
@@ -65,4 +66,6 @@ public class playerScript : MonoBehaviour {
 	void SubKnack(){
 		knack -= 1;
 	}
+
+	//static void PixelCrushers.DialogueSystem.DialogueLua.SetVariable("Life", life)	
 }
