@@ -30,6 +30,20 @@ public class playerScript : MonoBehaviour {
 	private bool inventoryOn;
 	public Sprite playerPortrait;
 	
+	//INVENTORY STUFF
+	public Sprite item1;
+	public string item1text;
+	public Sprite item2;
+	public string item2text;
+	public Sprite item3;
+	public string item3text;
+	public Sprite item4;
+	public string item4text;
+	public Sprite item5;
+	public string item5text;
+	public Sprite item6;
+	public string item6text;
+	
 
 	/* Dialogue System = SendMessage(AddLife,,topbar)
 	 * Conditional: Variable["VARIABLE_NAME"] == true
@@ -48,6 +62,38 @@ public class playerScript : MonoBehaviour {
 		lifeString = life.ToString ();
 		ammoString = ammo.ToString ();
 		knackString = knack.ToString ();
+		
+		//Move everything over if inventory changes (Could use a better script)
+			if (item1 == null){
+			item1 = item2;
+			item1text = item2text;
+			item2 = null;
+			item2text = null;
+			}
+			if (item2 == null){
+			item2 = item3;
+			item2text = item3text;
+			item3 = null;
+			item3text = null;
+			}
+			if (item3 == null){
+			item3 = item4;
+			item3text = item4text;
+			item4 = null;
+			item4text = null;
+			}
+			if (item4 == null){
+			item4 = item5;
+			item4text = item5text;
+			item5 = null;
+			item5text = null;
+			}
+			if (item5 == null){
+			item5 = item6;
+			item5text = item6text;
+			item6 = null;
+			item6text = null;
+			}
 		}
 
 	void OnGUI() {
@@ -62,9 +108,12 @@ public class playerScript : MonoBehaviour {
 		GUI.Label(new Rect(160, 4, 25, 25), knackString, skin);
 
 		if (menuOn == true) {
-			if (inventoryOn == true) {
+		GUI.Label(new Rect(0,50,100,50),"")
+		
+		if (inventoryOn == true) {
 			
-			}
+		
+		}
 		}
 	}
 
