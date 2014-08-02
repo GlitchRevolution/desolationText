@@ -63,7 +63,7 @@ public class playerScript : MonoBehaviour {
 		GUI.Label(new Rect(160, 4, 25, 25), knackString, skin);
 
 		if (menuOn == true) {
-		GUI.Label(new Rect(0,50,100,50),"")
+			GUI.Label(new Rect(0,50,100,50),"");
 		
 		if (inventoryOn == true) {
 			
